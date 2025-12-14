@@ -1,0 +1,55 @@
+# ===============================
+# OS / Editor
+# ===============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===============================
+# Environment Variables
+# ===============================
+.env
+.env.*
+!.env.example
+
+# ===============================
+# Backend (Python / FastAPI)
+# ===============================
+backend/__pycache__/
+backend/*.py[cod]
+backend/.Python
+backend/venv/
+backend/.venv/
+backend/env/
+backend/ENV/
+
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.cache/
+backend/*.log
+
+# ===============================
+# Frontend (Next.js / Node)
+# ===============================
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/dist/
+
+frontend/.env.local
+frontend/.env.*.local
+
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+frontend/package-lock.json
+frontend/yarn.lock
+frontend/pnpm-lock.yaml
+
+# ===============================
+# Build / Misc
+# ===============================
+coverage/
