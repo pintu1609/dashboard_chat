@@ -13,7 +13,7 @@ export default function YearSelector({
       <select
         value={year}
         onChange={(e) => setYear(Number(e.target.value))}
-        className="border rounded-lg px-3 py-2 bg-white"
+        className="border rounded-lg px-3 py-2 bg-white text-gray-600"
       >
         {years.map((y) => (
           <option key={y} value={y}>

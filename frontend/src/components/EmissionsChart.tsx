@@ -12,7 +12,7 @@ import {
 export default function EmissionsChart({ data }: { data: any[] }) {
   return (
     <>
-      <h2 className="text-lg font-semibold mb-3">
+      <h2 className="text-lg font-semibold mb-3 text-gray-700">
         Emissions by Sector (MtCO₂)
       </h2>
 

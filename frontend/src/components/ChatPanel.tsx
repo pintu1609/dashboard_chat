@@ -60,7 +60,7 @@ export default function ChatPanel({
 
   return (
     <div className="flex flex-col h-[420px]">
-      <h2 className="text-lg font-semibold mb-2">💬 Ask About Emissions</h2>
+      <h2 className="text-lg font-semibold mb-2 text-gray-700">💬 Ask About Emissions</h2>
 
       <div className="flex-1 overflow-y-auto border rounded p-2 mb-2 bg-gray-50">
         {messages.map((m, i) => (
@@ -74,7 +74,7 @@ export default function ChatPanel({
               className={`inline-block px-3 py-2 rounded-lg max-w-[90%] ${
                 m.role === "user"
                   ? "bg-blue-600 text-white"
-                  : "bg-gray-200"
+                  : "bg-gray-200 text-gray-800"
               }`}
             >
               {m.text}
@@ -94,7 +94,7 @@ export default function ChatPanel({
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask about trends, comparisons, policies..."
-          className="flex-1 border rounded px-3 py-2"
+          className="flex-1 border rounded px-3 py-2 bg-white text-gray-600 md:w-[90%]"
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
         />
         <button

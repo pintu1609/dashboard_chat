@@ -14,14 +14,14 @@ export default function StatsCards({
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
       <div className="bg-white rounded-xl shadow p-4">
         <p className="text-sm text-gray-500">Total Emissions ({year})</p>
-        <h3 className="text-2xl font-bold">
+        <h3 className="text-2xl font-bold text-gray-700">
           {total.toLocaleString()} MtCO₂
         </h3>
       </div>
 
       <div className="bg-white rounded-xl shadow p-4">
         <p className="text-sm text-gray-500">Top Sector</p>
-        <h3 className="text-lg font-semibold">{top?.sector}</h3>
+        <h3 className="text-lg font-semibold text-gray-700">{top?.sector}</h3>
         <p className="text-gray-600">{top?.emissions} MtCO₂</p>
       </div>
 
