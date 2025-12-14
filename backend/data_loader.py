@@ -1,17 +1,3 @@
-# import pandas as pd
-
-# URL = "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv"
-
-# def load_emissions():
-#     df = pd.read_csv(URL)
-
-#     df = df[["country", "year", "sector", "co2"]].dropna()
-#     df = df.groupby("sector", as_index=False)["co2"].sum()
-#     df["co2"] = (df["co2"] / 1e6).round(2)  # MtCO₂
-
-#     return df.to_dict(orient="records")
-
-
 import pandas as pd
 
 URL = "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv"
